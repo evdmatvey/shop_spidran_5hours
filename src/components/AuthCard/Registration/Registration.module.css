@@ -1,0 +1,32 @@
+.root {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 7px 14px;
+  border-radius: 10px;
+  border: 1px solid #979797;
+}
+
+.button {
+  padding: 7px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #eee;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background: #d2d2d2;
+  }
+}
