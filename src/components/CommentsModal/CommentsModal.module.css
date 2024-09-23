@@ -1,0 +1,52 @@
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.create {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.create input {
+  width: 200px;
+  padding: 7px 14px;
+  border: 1px solid #cccccc;
+  outline: none;
+  border-radius: 10px;
+}

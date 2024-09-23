@@ -3,6 +3,7 @@ import { requester } from '../../shared/helpers/requester';
 import { Product } from '../../stores/products.store';
 import { useUserStore } from '../../stores/user.store';
 import styles from './ProductCard.module.css';
+import CommentsModal from '../CommentsModal';
 
 interface ProductCardProps {
   product: Product;
@@ -39,6 +40,7 @@ const ProductCard = ({ product, withControls }: ProductCardProps) => {
         <div className={styles.buttons}>
           <button onClick={addToCartHandler}>В корзину</button>
           <button onClick={addToWishlistHandler}>В wishlist</button>
+          <CommentsModal productId={product.id} />
         </div>
       )}
     </div>
